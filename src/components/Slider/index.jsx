@@ -10,7 +10,7 @@ import { SliderProducts } from '../../data/products';
 
 const Slider = () => {
   return (
-    <div className='relative s-container'>
+    <div className='relative s-container md:mt-[2rem]'>
         <Swiper
             modules={[Pagination,Navigation]}
             className=' '
@@ -20,6 +20,23 @@ const Slider = () => {
             spaceBetween={40}
             slidesPerGroup={1}
             loop={true}
+            breakpoints={{
+                340:{
+                  slidesPerView:2
+                },
+                640:{
+                  slidesPerView:3
+                },
+                820:{
+                  slidesPerView:3
+                },
+                1023:{
+                  slidesPerView:3
+                }, 
+                1533:{
+                  slidesPerView:5
+                },   
+              }}
         >
                 {SliderProducts.map((slide,i)=>(
                     <SwiperSlide key={i} >

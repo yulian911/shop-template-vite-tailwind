@@ -13,14 +13,14 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-[100%] mt-[5rem]">
+    <div className="w-[100%] mt-[5rem] ">
       <hr className='w-[100%] h-[1px] border-none bg-white mt-[1rem] mb-[1rem]'/>
-      <div className="w-[100%] flex justify-around">
-        <div className="flex items-start gap-[1rem]">
+      <div className="w-[100%] flex justify-around xs:flex-col ">
+        <div className="flex items-start sm:flex-col sm:items-center gap-[1rem] sm:gap-[0.5rem]">
           <img className='w-[2.5rem] h-[2.5rem]' src={Logo} alt='logo'/>
           <span className='font-[600] text-[1rem] '>Amazon</span>
         </div>
-        <div className="flex flex-col gap-[1rem] max-w-[12rem] ">
+        <div className="flex flex-col gap-[1rem] max-w-[12rem] xs:px-4 ">
           <div className="flex flex-col w-[inherit] text-[0.7rem] gap-[1rem] italic">
             <span className='font-[500] normal text-[1.2rem]'>Contact US</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center">
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         {/* next block  */}
-        <div className="flex flex-col gap-[1rem] max-w-[12rem] ">
+        <div className="flex flex-col gap-[1rem] max-w-[12rem] xs:px-4 ">
           <div className="flex flex-col w-[inherit] text-[0.7rem] gap-[1rem] italic">
             <span className='font-[500] normal text-[1.2rem]'>Account</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center">
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         {/* next block  */}
-        <div className="flex flex-col gap-[1rem] max-w-[12rem] ">
+        <div className="flex flex-col gap-[1rem] max-w-[12rem] xs:px-4">
           <div className="flex flex-col w-[inherit] text-[0.7rem] gap-[1rem] italic">
             <span className='font-[500] normal text-[1.2rem]'>Company</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         {/* next block  */}
-        <div className="flex flex-col gap-[1rem] max-w-[12rem] ">
+        <div className="flex flex-col gap-[1rem] max-w-[12rem] xs:px-4">
           <div className="flex flex-col w-[inherit] text-[0.7rem] gap-[1rem] italic">
             <span className='font-[500] normal text-[1.2rem]'>Resources</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center">

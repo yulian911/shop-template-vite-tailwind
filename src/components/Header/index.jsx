@@ -15,7 +15,7 @@ const Header = () => {
     </div>
     {/* left column */}
     {/* right column */}
-    <div className='flex gap-[2rem] justify-center items-center md:absolute md:right-[2rem]  md:z-[999] md:bg-white md:text-[var(--black)] md:rounded-[5px] md:flex-col md:p-[1rem]'>
+    <div className='flex gap-[2rem] justify-center items-center md:absolute md:right-[1rem]  md:z-[999] md:bg-white md:text-[var(--black)] md:rounded-[5px] md:flex-col md:p-[1rem] xs:p-[0.5rem] xs:right-[1rem]'>
       {/* mobile button  */}
       <div className="hidden md:block" onClick={()=>setShowMenu(!showMenu)}>
         <GoThreeBars/>
