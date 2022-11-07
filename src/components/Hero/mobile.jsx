@@ -5,15 +5,12 @@ import {BsArrowRight} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 
 
-
-const Hero = () => {
-
+const Mobile = () => {
   const transition ={duration:3,type:'spring',}
-
   return (
-    <div className='px-[2rem] grid grid-cols-[1fr,3fr,1fr]'>
-        {/* left site */}
-        <div className='grid grid-rows-[1fr,1fr]'>
+    <div  className='px-[2rem] grid grid-cols-[1fr,3fr,1fr]'>
+      {/* left site */}
+          <div className='grid grid-rows-[1fr,1fr]'>
             <span className='uppercase text-[1.5rem] w-[min-content] block font-[600] md:text-[0.9rem] '>skin protection cream</span>
             <div className='flex flex-col w-[min-content] text-black'>
                 <span className='font-[800] text-[2.5rem] md:text-[1.5rem]'>
@@ -26,7 +23,6 @@ const Hero = () => {
                 </span>
             </div>
         </div>
-        {/* middle site */}
         <div className='flex items-baseline justify-center relative'>
           {/* blue circle */}
             <motion.div 
@@ -48,7 +44,8 @@ const Hero = () => {
               initial={{right:"4%"}}
               whileInView={{right:"2%"}}
               transition={transition}
-              className='absolute bottom-[25%] right-[5%] flex gap-[1rem] items-center'>
+              className='absolute bottom-[25%] md:bottom-[10%] right-[5%] 
+                flex gap-[1rem] items-center'>
                 <RiShoppingBagFill className='w-[60px] h-[60px] p-[10px] bg-white rounded-[50%] border-[4px] border-[var(--black)] ' />
                 <div className='flex gap-[1rem] items-center bg-white rounded-[15px] shadow-[--shadow1] p-[10px] text-[.8rem]'>
                     <span className='block w-[6rem]'>Best SignUp Offers</span>
@@ -75,4 +72,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Mobile
