@@ -2,6 +2,8 @@ import React from 'react'
 import ReactCompareImage from 'react-compare-image'
 import { shade,Before, After } from '../../assets'
 
+const Virtuals = ReactCompareImage.default? ReactCompareImage.default: ReactCompareImage
+
 const Virtual = () => {
   return (
     <div className='mt-[6rem] mb-[6rem] p-[2rem] flex justify-around md:flex-col md:items-center md:justify-center md:gap-[2rem]'>
@@ -13,7 +15,7 @@ const Virtual = () => {
         </div>
         <div className="right">
             <div className='w-[30rem] xs:w-[20rem]'>
-                <ReactCompareImage leftImage={Before} rightImage={After} />
+                <Virtuals leftImage={Before} rightImage={After} />
             </div>
         </div>
     </div>

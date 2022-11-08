@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.20.2",
     "@formkit/auto-animate": "^1.0.0-beta.3",
     "@heroicons/react": "^1.0.6",
+    "@rollup/plugin-commonjs": "^23.0.2",
     "framer-motion": "^7.6.5",
+    "jsx-runtime": "^1.2.0",
     "react": "^18.2.0",
     "react-compare-image": "^3.1.0",
     "react-dom": "^18.2.0",
